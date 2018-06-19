@@ -72,8 +72,13 @@ h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 4em;
-
+    transition: font-size 1s;
 }
+/*SOLUCIONAR EL DESPLAZAMIENTO DEL MAIN */
+h1:hover{
+    font-size: 4.5em;
+}
+
 /* footer */
 footer {
     background: #333745;
@@ -117,6 +122,9 @@ nav input {
     border: none;
     border-bottom: 1px solid grey;
     color: #333745;
+}
+nav input:focus{
+    box-shadow: none;
 }
 nav button {
     border: none;

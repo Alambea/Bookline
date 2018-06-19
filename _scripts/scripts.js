@@ -6,7 +6,6 @@ function Book (title, author, bookImg){
 
 var books = [new Book("The Ceo Who Lost His Head", "Aditya Sinha","http://www.ishankhosla.com/sites/default/files/styles/masonry200width/public/book-cover-design-india-18-06-2017.jpg?itok=krCrtN14"), new Book("The Shadow Of Silence","Alfred Hitchock","http://www.ishankhosla.com/sites/default/files/styles/masonry200width/public/book-design-india-30.jpg?itok=-XLS6qN2"), new Book("Meera Nanda", "The Good Market", "http://www.ishankhosla.com/sites/default/files/styles/masonry200width/public/book-design-india_thumbnail-39.jpg?itok=j3AgnKd_"), new Book("The Musk Syndrome", "Ruzbeh N. Bharucha", "http://www.ishankhosla.com/sites/default/files/styles/masonry200width/public/book-cover-design-29-03-17-TH.jpg?itok=59QEaLUj")];
 
-console.log(books);
 
 
 
@@ -23,7 +22,11 @@ for (var i=0; i<books.length; i++){
     
     //set title and author
     var bookHint = selectedBook.title + " - " + selectedBook.author;
-    bookStructure.querySelector(".title-author").innerHTML = bookHint;
+    console.log(bookHint)
+    var shortBookHint = bookHint.substring(0, 18)+ " ...";
+    
+    
+    bookStructure.querySelector(".title-author").innerHTML = shortBookHint;
     
     //set book image
     var bookImg = bookStructure.querySelector("img");
@@ -31,7 +34,8 @@ for (var i=0; i<books.length; i++){
     bookImg.setAttribute("title", bookHint);
     bookImg.setAttribute("alt", bookHint);
 
-    console.log(bookStructure);
     CAROUSEL.appendChild(bookStructure);
 };
 template.remove();
+
+
