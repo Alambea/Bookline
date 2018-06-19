@@ -1,0 +1,174 @@
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue/white
+#EF233C - red
+*/
+
+/* Global styles
+-------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+//    background: lightgrey;
+    font-family: 'Nunito Sans', sans-serif;
+    margin:0;
+}
+
+
+
+/* Download button */
+
+
+/* Main
+-------------------------*/
+main {
+    max-width: 80%;
+    margin: 0 auto;
+}
+h2{
+    border-bottom: 1px solid grey;
+}
+a i:hover {
+    color: darkred;
+}
+
+
+/* Header and Footer
+-------------------------*/
+
+/* header */
+header {
+    position: relative;
+    border-bottom: 2px solid grey;
+    background: white;
+}
+header div {
+    /* SOLUCIONAR MARGIN*/
+    overflow: hidden;
+    text-align: center;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 100px 50px;
+}
+header div i:hover {
+    color: darkred;
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+/*header i:hover {
+    color: darkred;
+}*/
+h1{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+
+}
+/* footer */
+footer {
+    background: #333745;
+    text-align: center;
+    border: 1px solid;
+    color: lightgray;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+footer a:hover {
+    color: lightgray
+}
+
+
+/* Navigation
+-------------------------*/
+nav {
+    background: white;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: darkred;
+    font-weight: 600;
+}
+nav a:hover{
+    border-bottom: 3px solid darkred;
+    color: #333745;
+    margin-bottom: -3px;
+}
+nav input {
+    border: none;
+    border-bottom: 1px solid grey;
+    color: #333745;
+}
+nav button {
+    border: none;
+    background: none;
+}
+
+
+
+/* Work Experience
+-------------------------*/
+
+
+
+/* Sections
+-------------------------*/
+section a i{
+    display: inline-block;
+    color: grey;
+    font-size: 2em;
+    
+}
+.carousel-container{
+    max-width: 100%;
+    background: white;
+    text-align: center;
+}
+.carousel{
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.book{
+    display: inline-block;
+    margin: 10px 20px;
+    background: lightgrey;
+    border-radius: 2%;
+}
+.book img{
+    display: block;
+    max-height: 287px;
+    max-width: 186px;
+    
+}
+.book div{
+    padding: 0 10px;
+    font-style: italic;
+    text-align: center;
+    max-height: 287px;
+    max-width: 186px;
+}
+.buy-icon{
+    display: block;
+    float:right;
+    color: darkred;
+}
